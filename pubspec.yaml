@@ -1,0 +1,9 @@
+name: recreate_const_test
+description: Repro for the information we hope to get out of the analyzer.
+
+dependencies:
+  analyzer: ">=0.27.1 <0.30.0"
+  path: ^1.4.1
+
+dev_dependencies:
+  test: ^0.12.0
