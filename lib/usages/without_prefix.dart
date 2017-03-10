@@ -15,13 +15,13 @@ class UseNamed {}
 class UseDeepInspection {}
 
 @simpleAnnotation
-class UseSimpleField {}
+class UseSimpleVariable {}
 
 @complexAnnotation
-class UseComplexField {}
+class UseComplexVariable {}
 
 @namedArguments
-class UseNamedArgumentsField {}
+class UseNamedArgumentsVariable {}
 
 @privateAnnotation
 class UsePrivate {}

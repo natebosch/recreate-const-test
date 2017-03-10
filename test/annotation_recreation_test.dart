@@ -64,5 +64,36 @@ void main() {
       final value = findAnnotation('UseComplex');
       assertCanCreate(value);
     });
+
+    test('with named arguments', () {
+      final value = findAnnotation('UseNamed');
+      assertCanCreate(value);
+    });
+
+    test('field from within an annotation', () {
+      final annotation = findAnnotation('UseDeepInspection');
+      final value = annotation.getField('field');
+      assertCanCreate(value);
+    });
+
+    test('simple as variable', () {
+      final value = findAnnotation('UseSimpleVariable');
+      assertCanCreate(value);
+    });
+
+    test('with field as variable', () {
+      final value = findAnnotation('UseComplexVariable');
+      assertCanCreate(value);
+    });
+
+    test('with named arguments as variable', () {
+      final value = findAnnotation('UseNamedArgumentsVariable');
+      assertCanCreate(value);
+    });
+
+    test('with private class', () {
+      final value = findAnnotation('UsePrivate');
+      assertCanCreate(value);
+    });
   });
 }
